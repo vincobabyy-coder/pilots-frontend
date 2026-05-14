@@ -95,11 +95,11 @@
   .badge {
     @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
   }
-  .badge-green  { @apply badge bg-green-100 text-green-800; }
-  .badge-amber  { @apply badge bg-amber-100 text-amber-800; }
-  .badge-red    { @apply badge bg-red-100 text-red-800; }
-  .badge-blue   { @apply badge bg-blue-100 text-blue-800; }
-  .badge-gray   { @apply badge bg-gray-100 text-gray-600; }
+  .badge-green  { @apply badge; background-color: var(--green-bg); color: var(--green); }
+  .badge-amber  { @apply badge; background-color: var(--amber-bg); color: var(--amber); }
+  .badge-red    { @apply badge; background-color: var(--red-bg); color: var(--red); }
+  .badge-blue   { @apply badge; background-color: var(--cyan-bg); color: var(--blue); }
+  .badge-gray   { @apply badge; background-color: var(--border); color: var(--ink-3); }
 
   /* Card */
   .card {
