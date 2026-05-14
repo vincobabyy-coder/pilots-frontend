@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "PILOTS",
+    "slug": "pilots",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#C27550"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.pilots.driver",
+      "infoPlist": {
+        "NSCameraUsageDescription": "PILOTS needs camera access to photograph delivery confirmation.",
+        "NSLocationWhenInUseUsageDescription": "PILOTS needs your location to track deliveries and update routes.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "PILOTS needs background location to update your route while driving."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#C27550"
+      },
+      "package": "com.pilots.driver",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-location",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow PILOTS to use your location."
+        }
+      ]
+    ]
+  }
+}

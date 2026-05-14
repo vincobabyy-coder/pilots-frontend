@@ -1,0 +1,72 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        bg: '#E8E8EC',
+        surface: '#F2F2F5',
+        card: '#FFFFFF',
+        'card-2': '#F8F8FB',
+        border: '#E0E0E6',
+        'border-sub': '#ECECF0',
+        'ink-1': '#0E0E10',
+        'ink-2': '#3A3A42',
+        'ink-3': '#7A7A86',
+        'ink-4': '#ADADB8',
+        'ink-inv': '#FFFFFF',
+        teal: '#12B8A6',
+        blue: '#1A7A96',
+        green: '#10B981',
+        'green-bg': '#D1FAE5',
+        amber: '#F59E0B',
+        'amber-bg': '#FEF3C7',
+        red: '#EF4444',
+        'red-bg': '#FEE2E2',
+        purple: '#8B5CF6',
+        'purple-bg': '#EDE9FE',
+        cyan: '#06B6D4',
+        'cyan-bg': '#CFFAFE',
+      },
+      fontFamily: {
+        sans: ['Geist', 'system-ui', 'sans-serif'],
+        mono: ['Geist Mono', 'monospace'],
+      },
+      fontSize: {
+        '2xs': '0.625rem',
+      },
+      boxShadow: {
+        '1': '0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04)',
+        '2': '0 4px 14px rgba(0,0,0,0.07), 0 2px 6px rgba(0,0,0,0.04)',
+        '3': '0 8px 28px rgba(0,0,0,0.09), 0 4px 12px rgba(0,0,0,0.05)',
+        '4': '0 16px 48px rgba(0,0,0,0.12), 0 8px 20px rgba(0,0,0,0.06)',
+        float: '0 2px 16px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04)',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.2s ease-out',
+        'slide-up': 'slideUp 0.25s ease-out',
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        slideUp: {
+          from: { transform: 'translateY(8px)', opacity: '0' },
+          to: { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+      transitionTimingFunction: {
+        ease: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        'ease-out': 'cubic-bezier(0, 0, 0.2, 1)',
+      },
+      transitionDuration: {
+        fast: '100ms',
+        std: '200ms',
+        slow: '300ms',
+      },
+    },
+  },
+  plugins: [],
+};
