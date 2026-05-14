@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL as string;
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://pilots-hq.onrender.com/api/v1';
 
 class NetworkError extends Error {
   constructor(

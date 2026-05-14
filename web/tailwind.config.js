@@ -6,6 +6,7 @@ export default {
       colors: {
         bg: '#E8E8EC',
         surface: '#F2F2F5',
+        'surface-3': '#F8F8FB',
         card: '#FFFFFF',
         'card-2': '#F8F8FB',
         border: '#E0E0E6',
@@ -27,6 +28,14 @@ export default {
         'purple-bg': '#EDE9FE',
         cyan: '#06B6D4',
         'cyan-bg': '#CFFAFE',
+        primary: '#12B8A6',
+        'primary-dark': '#0F9587',
+        secondary: '#1A7A96',
+        'secondary-dark': '#145A75',
+        danger: '#EF4444',
+        'text-primary': '#0E0E10',
+        'text-secondary': '#3A3A42',
+        'text-muted': '#7A7A86',
       },
       fontFamily: {
         sans: ['Geist', 'system-ui', 'sans-serif'],
