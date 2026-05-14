@@ -108,7 +108,8 @@
 
   /* Skeleton */
   .skeleton {
-    @apply bg-surface-3 animate-pulse rounded-md;
+    @apply animate-pulse rounded-md;
+    background-color: var(--card-2);
   }
 
   /* Page header */
