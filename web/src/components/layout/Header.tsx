@@ -18,7 +18,7 @@ export function Header({ title }: HeaderProps) {
         paddingLeft: '24px',
         paddingRight: '24px',
         gap: '16px',
-        shrinkFlex: 0,
+        flexShrink: 0,
       }}
     >
       <h1 style={{ flex: 1, fontSize: '16px', fontWeight: 500, color: 'var(--ink-1)' }}>
@@ -44,7 +44,7 @@ export function Header({ title }: HeaderProps) {
           >
             {state.user?.name?.charAt(0).toUpperCase() ?? 'U'}
           </div>
-          <div style={{ display: 'none', '@media (min-width: 768px)': { display: 'block' } }}>
+          <div style={{ display: 'none' }}>
             <p style={{ fontSize: '13px', fontWeight: 500, color: 'var(--ink-1)', lineHeight: 1, margin: 0 }}>
               {state.user?.name}
             </p>
